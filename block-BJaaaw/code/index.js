@@ -8,7 +8,7 @@
 */
 let num = 2;
 
-if num = 2{
+if (num = 2){
   alert("number is even");
 }else {
   alert("number is odd");
