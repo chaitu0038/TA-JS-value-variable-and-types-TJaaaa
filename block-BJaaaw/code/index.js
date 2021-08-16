@@ -6,9 +6,9 @@
   - `if` the number is even print the message " number is even"
   - `if` the number is odd print the message "number is odd"
 */
-let num = 2;
+let num;
 
-if (num = 2){
+if (num){
   alert("number is even");
 }else {
   alert("number is odd");
