@@ -15,6 +15,9 @@ if (num){
 }
 
 // 2. Write a program to accept two numbers from user using`prompt` and alert the max value.
+let min = 2;
+let max = 5;
+prompt("min and max value?");
 
 // 3. Convert the above code using`?` terniary operator
 
