@@ -6,6 +6,13 @@
   - `if` the number is even print the message " number is even"
   - `if` the number is odd print the message "number is odd"
 */
+let num = 2;
+
+if num = 2{
+  alert("number is even");
+}else {
+  alert("number is odd")
+}
 
 // 2. Write a program to accept two numbers from user using`prompt` and alert the max value.
 
