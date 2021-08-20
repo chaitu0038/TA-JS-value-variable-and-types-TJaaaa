@@ -6,20 +6,27 @@
   - `if` the number is even print the message " number is even"
   - `if` the number is odd print the message "number is odd"
 */
-let num;
+let number = Number(prompt("Enter a number?"));
 
-if (num){
-  alert("number is even");
-}else {
-  alert("number is odd");
+if (number % 2 === 0){
+  alert(`number is even`);
+} else {
+  alert(`number is odd`);
 }
 
 // 2. Write a program to accept two numbers from user using`prompt` and alert the max value.
-let min = 2;
-let max = 5;
-prompt("min and max value?");
+let numA = prompt("Enter numA");
+let numB = prompt("Enter numB");
+
+if (numA > numB) {
+  alert(`${numA} is greater`);
+} else {
+  alert(`${numB} is greater`);
+}
 
 // 3. Convert the above code using`?` terniary operator
+
+numA > numB ? alert(`${numA} is greater`) : alert(`${numB} is greater`);
 
 /*
 4. Write a program that asks the user for the house name and check the following conditions:
@@ -28,6 +35,17 @@ prompt("min and max value?");
   - `if` house name is "lannister" then print the message " A lannister always pays his debt"
   - `else` print the message " All men must die"
 */
+let houseName = prompt("Enter a house name from cgd");
+
+if (houseName === "stark") {
+  alert("winter is coming");
+} else if (houseName === "lannister") {
+  alert("A lannister always pays his debt");
+} else {
+  alert("All men must die")
+}
+
+houseName === "stark" ? alert("winter is coming") : houseName === "lannister" ? alert("A lannister pays his debt") : alert("All men must die");
 
 // 5. Convert the above code using`?` terniary operator
 
