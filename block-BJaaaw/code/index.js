@@ -60,6 +60,24 @@ houseName === "stark" ? alert("winter is coming") : houseName === "lannister" ? 
   - `Salary > 50000` tax is 30 %
 
 */
+let salary = prompt("Enter your salary");
+
+switch (true){
+  case salary <= 20000:
+    let tex = (salary * 10) / 100;
+    alert(`Your in-hand amount ${salary - tex}`);
+    break;
+  case salary <= 40000:
+    let tex = (salary * 20) / 100;
+    alert(`Your in-hand amount ${salary - tex}`);
+    break;
+  case salary > 50000:
+    let tex = (salary * 30) / 100;
+    alert(`Your in-hand amount ${salary - tex}`);
+    break;
+  default:
+    alert("Not a valid input!")
+}
 
 //  if..else vs switch
 
@@ -74,6 +92,34 @@ Implement the condition give below using`if..else` and`switch` statement.
 
 */
 
+if (marks > 100) {
+  alert("Marks can't be greater than 100");
+} else if (marks > 80 && marks < 100) {
+  alert("Grade A");
+} else if (marks > 50 && marks < 80) {
+  alert("Grade B");
+} else if (marks > 30 && marks < 50) {
+  alert("Grade C");
+} else {
+  alert("Grade D");
+}
+
+switch (true) {
+  case marks > 100:
+    alert("Marks can't be greater than 100");
+    break;
+  case marks > 80 && marks < 100:
+    alert("Grade A");
+    break;
+  case marks > 50 && marks < 80:
+    alert("Grade B");
+    break;
+  case marks > 30 && marks < 50:
+    alert("Grade C");
+    break;
+  default:
+    alert("Grade D");
+}
 /* 9. Weather app
 
   - Ask user to provide the condition of the weather outside by asking `What is the weather like outside?`
